@@ -4,18 +4,9 @@ export const API_KEY = `?api_key=${API_KEY_ONLY}`;
 // base
 // base_url + {movie id} + api_key + base_lang
 export const BASE_URL = "https://api.themoviedb.org/3/movie/";
-export const BASE_LANG = `&language="en-US"`;
-export const BASE_PAGE = `&page="1"`;
+// export const BASE_LANG = `&language="en-US"`;
+// export const BASE_PAGE = `&page="1"`;
 
 //FILTERS
-//NOW PLAYING - (BASE_URL + BASE_URL_NOW + API_KEY + BASE_LANG + BASE_PAGE)
-export const BASE_URL_NOW = "now_playing";
-
-//POPULAR - (BASE_URL + BASE_URL_POPULAR + API_KEY + BASE_LANG + BASE_PAGE)
-export const BASE_URL_POPULAR = "popular";
-
-//TOP RATED - (BASE_URL + BASE_URL_TOP + API_KEY + BASE_LANG + BASE_PAGE)
-export const BASE_URL_TOP = "top_rated";
-
-//TOP RATED - (BASE_URL + BASE_URL_UPCOMING + API_KEY + BASE_LANG + BASE_PAGE)
-export const BASE_URL_UPCOMING = "upcoming";
+// BASE_URL + URL_FILTER.xyz + API_KEY
+export const URL_FILTER = {now: "now_playing", pop: "popular", top: "top_rated", soon: "upcoming"};
