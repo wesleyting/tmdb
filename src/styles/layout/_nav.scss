@@ -1,0 +1,46 @@
+nav {
+    background-color: $headerbackgroundColour;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    display: block;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 0 10px 10px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: $headerFontColour;
+        line-height: 2em;
+        display: block;
+
+        &:hover {
+            color: rgba(155, 155, 155, 0.555);
+        }
+    }
+
+    .logo {
+        width: 80px;
+        padding: 8px 0 0 0;
+        justify-self: center;
+    }
+}
+
+
+
+
+.hamburger-react { 
+    color: white;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+}
+
+
