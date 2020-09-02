@@ -9,8 +9,8 @@ export const BASE_URL = "https://api.themoviedb.org/3/movie/";
 
 //FILTERS
 // BASE_URL + URL_FILTER.xyz + API_KEY
-export const URL_FILTER = {pop: "popular", now: "now_playing", top: "top_rated", soon: "upcoming"};
+export const URL_FILTER = {now: "now_playing", pop: "popular", top: "top_rated", soon: "upcoming"};
 
 // Default Choices
-export const DEFAULT_FILTER = 'pop';
+export const DEFAULT_CITY = 'Popular';
 export const DEFAULT_YEAR = '2020';
