@@ -1,13 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppRouter from './routers/AppRouter';
+import './styles/style.scss'
 
-import Home from './components/Home';
-// import './index.css';
-// import App from './App';
-// import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(
-<Home />,
-  document.getElementById('root')
-);
-
+ReactDOM.render(<AppRouter />, document.getElementById('root'));
