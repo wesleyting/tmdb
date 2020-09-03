@@ -1,0 +1,26 @@
+footer {
+    background-color: $headerbackgroundColour;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    p:first-child {
+        padding-top: 10px;
+    }
+
+    p {
+        margin-bottom: 5px;
+        padding-left: 20px;
+        color: $headerFontColour;
+    }
+
+    p a {
+        color: $headerFontColour;
+        text-decoration: none;
+
+        &:hover {
+            color: $hoverColour;
+        }
+    }
+}

@@ -37,9 +37,10 @@
 select {
     font-family: $bodyFont;
     box-shadow: 1px 1px 18px #d8d8d8;
-    border: none;
+    border: #dad4d4 1px solid;
     padding: 4px;
     margin-top: 10px;
+    padding-right: 50px;
 }
 
 @media (min-width: 720px) {
@@ -68,4 +69,38 @@ select {
         margin-top: 20px;
     }
 
+}
+
+@media (min-width: 1080px) {
+    
+    .content-wrapper {
+        max-width: 1080px;
+    }
+
+    .movie-grid { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    #movie-box:nth-child(3) {
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .content-wrapper {
+        max-width: 1440px;
+    }
+
+    .movie-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    #movie-box:nth-child(4) {
+        margin-top: 20px;
+    }
 }
