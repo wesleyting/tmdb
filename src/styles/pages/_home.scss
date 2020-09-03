@@ -1,4 +1,8 @@
 
+.content-wrapper {
+    margin: auto;
+    max-width: 360px;
+}
 
 #movie-box {
     
@@ -34,6 +38,34 @@ select {
     font-family: $bodyFont;
     box-shadow: 1px 1px 18px #d8d8d8;
     border: none;
-    padding: 3px;
+    padding: 4px;
     margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+    
+    .movie-grid { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .content-wrapper {
+        margin: auto;
+        max-width: 740px;
+        padding-bottom: 20px;
+    }
+
+    #movie-box {
+        margin: 0;
+    }
+
+    #movie-box:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    #movie-box:first-child {
+        margin-top: 20px;
+    }
+
 }

@@ -6,7 +6,7 @@ const SelectFilter = ({handleChange, defaultFilter, filterChoices}) => {
         handleChange(e.target.value);
     }
 
-    return <select className="dropdown-options" onChange={handleFilter} defaultValue={defaultFilter}>
+    return <select onChange={handleFilter} defaultValue={defaultFilter}>
             {Object.entries(filterChoices).map((item, i) => {
                 // format the string
                 let itemKey = item[0];
@@ -17,7 +17,7 @@ const SelectFilter = ({handleChange, defaultFilter, filterChoices}) => {
                 }
 
                 return(
-                    <option key={i} value={itemKey}>{itemValue}</option>
+                    <option className="dropdown-options" key={i} value={itemKey}>{itemValue}</option>
                 );
     })};
     </select>
