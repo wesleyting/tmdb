@@ -12,14 +12,15 @@ const MovieList = ({grid}) => {
     return grid.map((item, i) => {
         return (
             // grid-tile jsx - perhaps shunt off to movieFilter/movieParse?
-            <div key={i} className={`movie-${i < 10 ? '0' : ''}${i + 1}`}>
-                <p>{item.title}</p>
+            <div key={i} id="movie-box" className={`movie-${i < 10 ? '0' : ''}${i + 1}`}>
                 <img src={`https://image.tmdb.org/t/p/${posterWidth}/${item.poster_path}`} alt={`${item.title} movie poster`}/>
-                <p>DESCRIPTION: {item.overview}</p>
-                <p>RELEASE DATE: {item.release_date}</p>
-                <p>ID: {item.id}</p>
-                <p>RATING: {item.vote_average}</p>
-                
+                <div className="movie-info">
+                    <p className="movie-title">{item.title}</p>
+                    <p>DESCRIPTION: {item.overview}</p>
+                    <p>RELEASE DATE: {item.release_date}</p>
+                    <p>ID: {item.id}</p>
+                    <p>RATING: {item.vote_average}</p>
+                </div>
             </div>
         );
         });

@@ -1,0 +1,31 @@
+
+
+#movie-box {
+    
+    display: flex;
+    box-shadow: 1px 1px 18px #d8d8d8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FAFEFF;
+    max-width: 360px;
+
+    img {
+        width: 160px;
+        height: 240px;
+    }
+
+    .movie-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 15px;
+    }
+
+    .movie-info {
+        width: 47%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+    }
+}
