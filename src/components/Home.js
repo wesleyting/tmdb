@@ -24,8 +24,10 @@ const Home = () => {
     
     return (
         <main>
+            <div className="content-wrapper">
             <SelectFilter handleChange={handleFilter} filterChoices={URL_FILTER} defaultFilter={DEFAULT_FILTER} />
             <MovieList grid={grid}/>
+            </div>
         </main>
     );
 }

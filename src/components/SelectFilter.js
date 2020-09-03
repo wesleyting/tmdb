@@ -6,7 +6,7 @@ const SelectFilter = ({handleChange, defaultFilter, filterChoices}) => {
         handleChange(e.target.value);
     }
 
-    return <select onChange={handleFilter} defaultValue={defaultFilter}>
+    return <select className="dropdown-options" onChange={handleFilter} defaultValue={defaultFilter}>
             {Object.entries(filterChoices).map((item, i) => {
                 // format the string
                 let itemKey = item[0];
