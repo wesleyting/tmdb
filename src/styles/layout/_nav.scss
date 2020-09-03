@@ -12,7 +12,7 @@ nav {
     display: block;
     justify-content: flex-end;
     width: 100%;
-    padding: 0 0 10px 10px;
+    padding: 0 0 10px 20px;
     }
 
     li a {
@@ -22,7 +22,7 @@ nav {
         display: block;
 
         &:hover {
-            color: rgba(155, 155, 155, 0.555);
+            color: rgb(155, 155, 155);
         }
     }
 
@@ -33,15 +33,11 @@ nav {
     }
 }
 
-
-
-
 .hamburger-react { 
     color: white;
     position: absolute !important;
     left: 10px;
     top: 0;
-    padding-left: 5px;
 }
 
 

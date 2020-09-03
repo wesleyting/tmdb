@@ -13,7 +13,7 @@ const Nav = () => {
 
     return (
     <nav>
-        <Hamburger onToggle={openHamburger} size={28}/>
+        <Hamburger onToggle={openHamburger} size={30}/>
         <div className="logo"><Link to={'/'}><img src={Logo}/></Link></div>
         {open && <ul >
             <li><NavLink to={'/'} exact>Home</NavLink></li>
