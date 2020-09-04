@@ -1,6 +1,7 @@
 import React from 'react';
 import { MAX_DESC_LENGTH } from '../globals/variables';
 import truncateDesc from '../utilities/truncateDesc';
+import parseDate from '../utilities/parseDate';
 
 const MovieList = ({grid}) => {
     //There are specific dimensions for poster images: w500 or original, not sure if there are other sizes?
@@ -18,10 +19,11 @@ const MovieList = ({grid}) => {
                 <img src={`https://image.tmdb.org/t/p/${posterWidth}/${item.poster_path}`} alt={`${item.title} movie poster`}/>
                 <div className="movie-info">
                     <p className="movie-title">{item.title}</p>
+                    <p>{parseDate(item.release_date)}</p>
+                    <p>&#x2605; {item.vote_average}</p>
                     <p>{truncateDesc(item.overview, MAX_DESC_LENGTH)}</p>
-                    <p>RELEASE DATE: {item.release_date}</p>
-                    <p>ID: {item.id}</p> 
-                    <p>RATING: {item.vote_average}</p>
+                    {/* This will be useful for links later
+                    <p>ID: {item.id}</p>  */}                    
                 </div>
             </div>
         );

@@ -1,4 +1,6 @@
 // truncates text longer than MAX with ...
+// as it's character-count based, this may be better done in another way:
+// https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
 const truncateDesc = (str, max) => {
     if (str.length > max) {
         let descArr = str.split(" ");
@@ -17,8 +19,7 @@ const truncateDesc = (str, max) => {
         }
     } else {
         return str;
-    }
-    
+    }   
 
 }
 
