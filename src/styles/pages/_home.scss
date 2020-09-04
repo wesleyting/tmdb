@@ -24,6 +24,12 @@
         font-weight: bold;
         text-transform: uppercase;
         padding-top: 15px;
+
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
     }
 
     .movie-info {
@@ -31,6 +37,14 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 10px;
+
+        .movie-desc {
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;  
+        }
     }
 }
 

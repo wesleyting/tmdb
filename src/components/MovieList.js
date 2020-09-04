@@ -19,9 +19,9 @@ const MovieList = ({grid}) => {
                 <img src={`https://image.tmdb.org/t/p/${posterWidth}/${item.poster_path}`} alt={`${item.title} movie poster`}/>
                 <div className="movie-info">
                     <p className="movie-title">{item.title}</p>
-                    <p>{parseDate(item.release_date)}</p>
-                    <p>&#x2605; {item.vote_average}</p>
-                    <p>{truncateDesc(item.overview, MAX_DESC_LENGTH)}</p>
+                    <p className="movie-rls">{parseDate(item.release_date)}</p>
+                    <p classname="movie-rating">&#x2605; {item.vote_average}</p>
+                    <p className="movie-desc">{item.overview}</p>
                     {/* This will be useful for links later
                     <p>ID: {item.id}</p>  */}                    
                 </div>
