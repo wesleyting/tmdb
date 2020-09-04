@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Quicksand&display=swap");
 
 // Style Variables
 
@@ -9,7 +9,10 @@ $headerFontColour: white;
 $headerbackgroundColour: #263855;
 $backgroundColour: #ECF3F3;
 $hoverColour: #9b9b9b;
+$contentColour: #FAFEFF;
+$boxShadow: 1px 1px 18px #d8d8d8;
 
 // Typography
-$bodyFont: 'Raleway', sans-serif;
+$headerFont: 'Belleza', sans-serif;
+$bodyFont: 'Quicksand', sans-serif;
 $headingFont: 'Replace with Font';
