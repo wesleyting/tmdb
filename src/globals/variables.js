@@ -14,3 +14,6 @@ export const URL_FILTER = {pop: "popular", now: "now_playing", top: "top_rated",
 // Default Choices
 export const DEFAULT_FILTER = 'pop';
 export const DEFAULT_YEAR = '2020';
+
+// 
+export const MAX_DESC_LENGTH = '220';
