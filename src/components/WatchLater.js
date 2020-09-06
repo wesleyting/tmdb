@@ -1,7 +1,9 @@
 import React from 'react';
 
 const WatchLater = () => (
-    <div>This is the Watch Later page</div>
+    <main>
+        <div><h1>This is the Watch Later page</h1></div>
+    </main>
 );
 
 export default WatchLater;

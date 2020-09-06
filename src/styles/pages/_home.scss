@@ -1,7 +1,17 @@
 
 .content-wrapper {
-    margin: auto;
     max-width: 360px;
+    padding-top: 30px;
+    margin: auto;
+
+}
+
+.wrapper {
+    position: relative;
+}
+
+.movie-grid {
+    margin-bottom: 60px;
 }
 
 #movie-box {
@@ -11,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     background-color: #FAFEFF;
     max-width: 360px;
 

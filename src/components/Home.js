@@ -25,8 +25,8 @@ const Home = () => {
     return (
         <main>
             <div className="content-wrapper">
-            <SelectFilter handleChange={handleFilter} filterChoices={URL_FILTER} defaultFilter={DEFAULT_FILTER} />
-            <div className="movie-grid"><MovieList grid={grid}/></div>
+                <SelectFilter handleChange={handleFilter} filterChoices={URL_FILTER} defaultFilter={DEFAULT_FILTER} />
+                <div className="movie-grid"><MovieList grid={grid}/></div>
             </div>
         </main>
     );

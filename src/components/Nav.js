@@ -7,6 +7,7 @@ import Logo from '../images/reeltalk-logo.png';
 const Nav = () => {
 
     const [open, setOpen] = useState(false);
+
     const openHamburger = () => {
         setOpen(!open);
     }

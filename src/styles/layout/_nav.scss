@@ -1,6 +1,7 @@
 nav {
     background-color: $headerbackgroundColour;
-    position: relative;
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
