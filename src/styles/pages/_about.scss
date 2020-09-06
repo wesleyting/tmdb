@@ -1,7 +1,7 @@
 
 .about-h1 {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .about-h1, .about-content h2 {
@@ -10,7 +10,7 @@
 
 .tmdb-img {
     width: 20%;
-    
+    margin: auto;
 }
 
 .about-content {
@@ -42,8 +42,40 @@
     margin-bottom: 20px;
 }
 
-@media(min-width: 440px) {
+@media(min-width: 420px) {
     .about-info {
-        max-width: 440px;
+        max-width: 420px;
+    }
+}
+
+@media(min-width: 880px) {
+
+    .about {
+        margin-top: 40px;
+    }
+    .about-content {
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 880px;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .about-h1 {
+        padding-top: 20px;
+    }
+
+    .wrapper {
+        min-height: 100vh;
+        background-color: $backgroundColour;
+    }
+
+    .about-info {
+        height: 325px;
+    }
+
+    .about-info:last-child {
+        margin-top: 0;
     }
 }
