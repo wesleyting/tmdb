@@ -8,6 +8,7 @@ import About from '../components/About';
 import Favorites from '../components/Favorites';
 import WatchLater from '../components/WatchLater';
 import PageNotFound from '../components/PageNotFound';
+import SingleMovie from '../components/SingleMovie';
 
 
 const AppRouter = () => (
@@ -20,6 +21,7 @@ const AppRouter = () => (
 				<Route path={'/about'}><About /></Route>
 				<Route path={'/favorites'} exact><Favorites /></Route>
 				<Route path={'/watch-later'} exact><WatchLater /></Route>
+                <Route path={'/movie/:id'} component={SingleMovie} exact></Route>
 				<Route path={'/*'}><PageNotFound /></Route>
             </Switch>
             <Footer />
