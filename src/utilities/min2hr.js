@@ -1,14 +1,13 @@
 const min2hr = (time) => {
+    let converted = "";
     if (time >= 60) {
-     let hours = Math.floor(time / 60);
-     let mins = time % 60;
-
-     let converted = `${hours} hr ${mins} m`;
-
-     return converted;
+        let hours = Math.floor(time / 60);
+        let mins = time % 60;
+        converted = `${hours} hr ${mins} m`;
     } else {
-        return time;
+        converted = `${time} m`;
     }
+    return converted;
 }
 
 export default min2hr;
