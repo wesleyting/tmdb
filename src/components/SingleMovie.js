@@ -14,7 +14,7 @@ const SingleMovie = ({match}) => {
         const fetchMovie = async () => {
             const res = await fetch(BASE_URL + id + API_KEY);
             const data = await res.json();
-            console.log(data);
+            //console.log(data);
             setMovie(data);
         }
         fetchMovie();

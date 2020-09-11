@@ -16,5 +16,4 @@ export const DEFAULT_FILTER = 'pop';
 export const DEFAULT_YEAR = '2020';
 
 // Movie Box Constants
-export const MAX_DESC_LENGTH = '170';
 export const MONTH_FORMAT = "long"; //use short for abbrv

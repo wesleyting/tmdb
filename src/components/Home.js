@@ -11,11 +11,10 @@ const Home = () => {
     const handleFilter = (e) => {
         setFilter(e);
     }
-
     
     useEffect(() => {
         const fetchMovie = async () => {
-            const res = await fetch(BASE_URL + URL_FILTER.[filter] + API_KEY);
+            const res = await fetch(BASE_URL + URL_FILTER[filter] + API_KEY);
             const data = await res.json();
             setGrid(data.results);
         }
