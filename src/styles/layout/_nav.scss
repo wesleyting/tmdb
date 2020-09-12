@@ -5,6 +5,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 100;
 
     ul {
     margin: 0;
@@ -49,6 +50,10 @@ nav {
 
     .hamburger-react {
         top: 8px;
+    }
+
+    main {
+        padding-top: 60px;
     }
     
 }
