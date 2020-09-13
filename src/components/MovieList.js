@@ -8,7 +8,7 @@ const MovieList = ({grid}) => {
     //Also there is the images api call, but the dimension they return do not match
     //from: https://developers.themoviedb.org/3/getting-started/images
     let posterWidth = "w500";
-    
+
     if (!grid) {
         return null;
     } else {
@@ -21,7 +21,6 @@ const MovieList = ({grid}) => {
                     <img className="poster-img" src={`https://image.tmdb.org/t/p/${posterWidth}/${item.poster_path}`} alt={`${item.title} movie poster`}/>
                 </Link>   
                 <div className="poster-buttons">
-                    {/* <div className="favorite"><Link to={'/favorites'}><FaveButton item={item} image={Favorite}/></Link></div> */}
                     <div className="favorite"><FaveButton item={item} /></div>
                     <div className="more-info"><Link to={`movie/${item.id}`}><button>More info</button></Link></div>
                 </div>

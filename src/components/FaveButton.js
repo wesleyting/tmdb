@@ -4,9 +4,11 @@ import FilledFavHeart from '../images/heart.png';
 import EmptyFavHeart from '../images/favorite.png';
 
 const FaveButton = ({ item, classNm = 'fave-btn' }) => {
-    let defaultHeart = isFaveStored(item) ? FilledFavHeart : EmptyFavHeart;
+    const displayHeart = (favSt) => {
+        return favSt ? FilledFavHeart : EmptyFavHeart;
+    }
     const [faves, setFaves] = useState(getFaves('faves'));
-    const [favImage, setHeart] = useState(defaultHeart);
+
 
     useEffect( () => {
         getFaves('faves');
@@ -17,26 +19,19 @@ const FaveButton = ({ item, classNm = 'fave-btn' }) => {
         // } 
     }, [faves]);
 
-    useEffect( () => {
-    }, [favImage]);
-
     const handleFave = (movie) => {
-        //console.log("ya clicked fave", movie);
-        if (favImage === EmptyFavHeart) {
+        if (!isFaveStored(movie)) {
             storeFave(movie);
-            setHeart(FilledFavHeart);
             setFaves(getFaves('faves'));
         } else {
             delFave(movie);
-            setHeart(EmptyFavHeart);
             setFaves(getFaves('faves'));
         }            
-            //console.log(`faves:${faves} ${faves.length}:`,getFaves('faves'));
             //console.log(faves.length > 0 ? `ggfs ${faves[0].id}` : "o");
     }
     
     return (
-    <button className={classNm} onClick={() => handleFave(item)}><img src={favImage}/></button>
+    <button className={classNm} onClick={() => handleFave(item)}><img src={displayHeart(isFaveStored(item))}/></button>
     );
 }
 

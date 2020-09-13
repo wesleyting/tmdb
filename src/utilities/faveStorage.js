@@ -48,23 +48,13 @@ export const getFaves = (fav = null) => {
     }
     let storedFaves = localStorage.getItem(fav);
     return JSON.parse(storedFaves);
-    
-    // let storedFaves = localStorage.getItem(fav);
-    // storedFaves = (storedFaves) ? JSON.parse(storedFaves) : [];
-    // //console.log('stored',storedFaves);
-    // if (storedFaves.length > 0) {
-    //     // storedFaves = JSON.parse(storedFaves);
-    //     console.log('stored faves', storedFaves);
-    //     return storedFaves;
-    // } else {
-    //     return false;
-    // }
-
 }
 
 export const delFave = (movie) => {
     let storedFaves = getFaves('faves');
     let rm = storedFaves.map( item => { return item.id }).indexOf(movie.id);
-    storedFaves.splice(rm, 1);
+    if (rm >= 0) {
+        storedFaves.splice(rm, 1);
+    }    
     localStorage.setItem('faves', JSON.stringify(storedFaves));
 }
