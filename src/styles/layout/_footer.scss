@@ -2,6 +2,9 @@ footer {
     background-color: $headerbackgroundColour;
     padding-bottom: 5px;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     p:first-child {
         padding-top: 10px;
