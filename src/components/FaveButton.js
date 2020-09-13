@@ -4,8 +4,9 @@ import FilledFavHeart from '../images/heart.png';
 import EmptyFavHeart from '../images/favorite.png';
 
 const FaveButton = ({ item }) => {
+    let defaultHeart = isFaveStored(item) ? FilledFavHeart : EmptyFavHeart;
     const [faves, setFaves] = useState(getFaves('faves'));
-    const [favImage, setHeart] = useState(EmptyFavHeart);
+    const [favImage, setHeart] = useState(defaultHeart);
 
     useEffect( () => {
         getFaves('faves');
