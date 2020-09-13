@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import parseDate from '../utilities/parseDate';
-import Favorite from '../images/favorite.png';
+import FaveButton from './FaveButton';
 
 const MovieList = ({grid}) => {
     //There are specific dimensions for poster images: w500 or original, not sure if there are other sizes?
@@ -20,8 +20,9 @@ const MovieList = ({grid}) => {
                 <Link className="poster-link" to={`movie/${item.id}`}>
                     <img className="poster-img" src={`https://image.tmdb.org/t/p/${posterWidth}/${item.poster_path}`} alt={`${item.title} movie poster`}/>
                 </Link>   
-                <div class="poster-buttons">
-                    <div className="favorite"><Link to={'/favorites'}><img src={Favorite}/></Link></div>
+                <div className="poster-buttons">
+                    {/* <div className="favorite"><Link to={'/favorites'}><FaveButton item={item} image={Favorite}/></Link></div> */}
+                    <div className="favorite"><FaveButton item={item} /></div>
                     <div className="more-info"><Link to={`movie/${item.id}`}><button>More info</button></Link></div>
                 </div>
                 </div>
