@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../globals/variables.js';
+import FaveButton from './FaveButton';
 import parseDate from '../utilities/parseDate';
 import min2hr from '../utilities/min2hr';
 
@@ -31,7 +32,7 @@ const SingleMovie = ({match}) => {
                         <img src={`https://image.tmdb.org/t/p/${posterWidth}/${singleMovie.poster_path}`} alt={`${singleMovie.title} movie poster`}/>
                         <img src={`https://image.tmdb.org/t/p/${posterWidth}/${singleMovie.backdrop_path}`} alt={`${singleMovie.title} backdrop`}/>
                         <div className="single-text-info">
-                            <h1>{singleMovie.title}</h1>
+                            <h1>{singleMovie.title} <FaveButton item={singleMovie} classNm={'single-fave-btn'}/></h1>
                             <h2>{singleMovie.tagline}</h2>
                             <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
                             <p className="single-rating">&#x2605; {singleMovie.vote_average}</p>

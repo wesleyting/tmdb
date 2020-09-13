@@ -3,7 +3,7 @@ import { storeFave, isFaveStored, getFaves, delFave } from '../utilities/faveSto
 import FilledFavHeart from '../images/heart.png';
 import EmptyFavHeart from '../images/favorite.png';
 
-const FaveButton = ({ item }) => {
+const FaveButton = ({ item, classNm = 'fave-btn' }) => {
     let defaultHeart = isFaveStored(item) ? FilledFavHeart : EmptyFavHeart;
     const [faves, setFaves] = useState(getFaves('faves'));
     const [favImage, setHeart] = useState(defaultHeart);
@@ -36,7 +36,7 @@ const FaveButton = ({ item }) => {
     }
     
     return (
-    <button className="fave-btn" onClick={() => handleFave(item)}><img src={favImage}/></button>
+    <button className={classNm} onClick={() => handleFave(item)}><img src={favImage}/></button>
     );
 }
 
