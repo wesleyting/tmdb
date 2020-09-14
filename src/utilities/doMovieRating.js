@@ -5,9 +5,9 @@ const doMovieRating = (movie) => {
         return `Unrated`;
     } else {
         return (
-        <div className="rating-info">
+        <p className="rating-info">
             <span className="rating-star">{`\u2605`}</span> {movie.vote_average}
-        </div>
+        </p>
         );
     }
 }
