@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../globals/variables.js';
 import FaveButton from './FaveButton';
 import doMovieImages from '../utilities/doMovieImages';
+import doMovieRating from '../utilities/doMovieRating';
 import parseDate from '../utilities/parseDate';
 import min2hr from '../utilities/min2hr';
 
@@ -36,7 +37,7 @@ const SingleMovie = ({match}) => {
                             <h1>{singleMovie.title} <FaveButton item={singleMovie} classNm={'single-fave-btn'}/></h1>
                             <h2>{singleMovie.tagline}</h2>
                             <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
-                            <p className="single-rating">&#x2605; {singleMovie.vote_average}</p>
+                            <p className="single-rating">{doMovieRating(singleMovie)}</p>
                             <p className="single-runtime">{min2hr(singleMovie.runtime)} </p> 
                             <p className="single-desc">{singleMovie.overview}</p>
                         </div>
