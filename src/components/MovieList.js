@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import doMovieImages from '../utilities/doMovieImages';
 import parseDate from '../utilities/parseDate';
 import FaveButton from './FaveButton';
 
@@ -18,7 +19,7 @@ const MovieList = ({grid}) => {
             <div key={i} id="movie-box" className={`movie-${i < 10 ? '0' : ''}${i + 1}`}>
                 <div className="poster-container">
                 <Link className="poster-link" to={`movie/${item.id}`}>
-                    <img className="poster-img" src={`https://image.tmdb.org/t/p/${posterWidth}/${item.poster_path}`} alt={`${item.title} movie poster`}/>
+                    {doMovieImages(item, posterWidth,'poster')}                    
                 </Link>   
                 <div className="poster-buttons">
                     <div className="favorite"><FaveButton item={item} /></div>

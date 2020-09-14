@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../globals/variables.js';
 import FaveButton from './FaveButton';
+import doMovieImages from '../utilities/doMovieImages';
 import parseDate from '../utilities/parseDate';
 import min2hr from '../utilities/min2hr';
 
@@ -21,7 +22,7 @@ const SingleMovie = ({match}) => {
         fetchMovie();
     }, []);
 
-    
+  
     if (!singleMovie) {
         return null;
     } else {
@@ -29,8 +30,8 @@ const SingleMovie = ({match}) => {
             <main>
                 <div className="content-wrapper">
                     <div className="single-movie-info">
-                        <img src={`https://image.tmdb.org/t/p/${posterWidth}/${singleMovie.poster_path}`} alt={`${singleMovie.title} movie poster`}/>
-                        <img src={`https://image.tmdb.org/t/p/${posterWidth}/${singleMovie.backdrop_path}`} alt={`${singleMovie.title} backdrop`}/>
+                        {doMovieImages(singleMovie, posterWidth,'poster')}
+                        {doMovieImages(singleMovie, posterWidth, 'backdrop')}
                         <div className="single-text-info">
                             <h1>{singleMovie.title} <FaveButton item={singleMovie} classNm={'single-fave-btn'}/></h1>
                             <h2>{singleMovie.tagline}</h2>
