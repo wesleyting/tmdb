@@ -1,4 +1,9 @@
 main {
     background-color: $backgroundColour;
-    padding: 70px 0 20px 0;
+    padding-bottom: 72px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
 }
