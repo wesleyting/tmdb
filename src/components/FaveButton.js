@@ -9,7 +9,6 @@ const FaveButton = ({ item, classNm = 'fave-btn' }) => {
     }
     const [faves, setFaves] = useState(getFaves('faves'));
 
-
     useEffect( () => {
         getFaves('faves');
         // if (Array.isArray(faves)) {
