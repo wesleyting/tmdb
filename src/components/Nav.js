@@ -1,29 +1,48 @@
 import React, {useState} from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import { Spin as Hamburger } from 'hamburger-react';
+import { Link } from 'react-router-dom';
 import Logo from '../images/reeltalk-logo.png';
 
 
-const Nav = () => {
+function Nav() {
+  const[click, setClick] = useState(false);
 
-    const [open, setOpen] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-    const openHamburger = () => {
-        setOpen(!open);
-    }
 
-    return (
-    <nav>
-        <Hamburger onToggle={openHamburger} size={30}/>
-        <div className="logo"><Link to={'/'}><img src={Logo}/></Link></div>
-        {open && <ul >
-            <li><NavLink to={'/'} exact>Home</NavLink></li>
-            <li><NavLink to={'/about'}>About</NavLink></li>
-            <li><NavLink to={'/favorites'}>Favorites</NavLink></li>
-            <li><NavLink to={'/watch-later'}>Watch Later</NavLink></li>
-        </ul>}
-	</nav>
-    );
-};
+  return (
+    <>
+      <nav className='nav'>
+        <Link to='/' 
+        className='logo'>
+          <img src={Logo} />
+        </Link>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/' className='nav-links' onClick=
+            {closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/about' className='nav-links' onClick=
+            {closeMobileMenu}>
+              About
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/favorites' className='nav-links' onClick=
+            {closeMobileMenu}>
+              Favorites
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
+  )
+}
 
 export default Nav;
