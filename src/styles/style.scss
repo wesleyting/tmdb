@@ -1,6 +1,4 @@
 // Abstracts
-@import './abstracts/functions';
-@import './abstracts/mixins';
 @import './abstracts/variables';
 
 // Base
@@ -15,7 +13,6 @@
 @import './layout/body';
 @import './layout/footer';
 @import './layout/header';
-@import './layout/main';
 @import './layout/nav';
 
 // Pages
