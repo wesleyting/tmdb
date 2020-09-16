@@ -12,9 +12,9 @@ function Nav() {
 
   return (
     <>
-      <nav className='nav'>
+      <nav className='navbar'>
         <Link to='/' 
-        className='logo'>
+        className='navbar-logo'>
           <img src={Logo} />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
