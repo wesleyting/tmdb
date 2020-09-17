@@ -1,27 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../globals/variables.js';
 import FaveButton from './FaveButton';
+import SearchBar from './SearchBar';
 import doMovieImages from '../utilities/doMovieImages';
 import doMovieRating from '../utilities/doMovieRating';
 import parseDate from '../utilities/parseDate';
 import min2hr from '../utilities/min2hr';
 
 const SingleMovie = ({match}) => {
-
-    const id = match.params.id;
     let posterWidth = "original";
 
     const [singleMovie, setMovie] = useState(null);
+    const id = match.params.id;
     
     useEffect(() => {
         const fetchMovie = async () => {
             const res = await fetch(BASE_URL + id + API_KEY);
             const data = await res.json();
-            //console.log(data);
             setMovie(data);
         }
         fetchMovie();
-    }, []);
+    }, [id]);
 
   
     if (!singleMovie) {
@@ -30,6 +29,7 @@ const SingleMovie = ({match}) => {
         return (
             <main>
                 <div className="single-wrapper">
+                    <SearchBar />
                     <div className="single-movie-info">
                         <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}</div>
                         <div className="single-text-info">

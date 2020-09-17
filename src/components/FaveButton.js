@@ -12,11 +12,6 @@ const FaveButton = ({ item, classNm = 'fave-btn' }) => {
 
     useEffect( () => {
         getFaves('faves');
-        // if (Array.isArray(faves)) {
-        //     let out = "";
-        //     faves.forEach((item, i) => { out += `${i}:${item.id},`});
-        //     console.log(out);
-        // } 
     }, [faves]);
 
     const handleFave = (movie) => {
@@ -26,8 +21,7 @@ const FaveButton = ({ item, classNm = 'fave-btn' }) => {
         } else {
             delFave(movie);
             setFaves(getFaves('faves'));
-        }            
-            //console.log(faves.length > 0 ? `ggfs ${faves[0].id}` : "o");
+        }
     }
     
     return (
