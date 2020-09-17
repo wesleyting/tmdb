@@ -36,7 +36,6 @@ const SearchBar = ({type, q}) => {
                     <button className="search-btn" type="submit">{searchText}</button>
                 </form>
                 {handleRedir()}
-                {query}
             </div>
         );
 
