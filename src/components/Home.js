@@ -20,13 +20,11 @@ const Home = () => {
 
     const handlePagi = (p) => {
         setPage(p);
-        console.log('p',p);
     }
     
     useEffect(() => {
         const fetchMovie = async () => {
             const res = await fetch(BASE_URL + URL_FILTER[filter] + API_KEY + BASE_PAGE + page);
-            console.log("call", BASE_URL + URL_FILTER[filter] + API_KEY + BASE_PAGE + page);
             const data = await res.json();
             setGrid(data.results);
             setPagi(data);

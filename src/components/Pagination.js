@@ -6,7 +6,7 @@ const Pagination = ( {results, handleChange} ) => {
     let curr = results !== null ? results.page : 1;
     let minDis = curr <= 1 ? true : false;
     let maxDis = curr === total ? true: false;
-    console.log(`totalPages:${total}`, `currPages:${curr}`);
+    // console.log(`totalPages:${total}`, `currPages:${curr}`);
 
     const pageNavs = [];
 

@@ -20,7 +20,7 @@ const SearchBar = ({type, q}) => {
     }
 
     const handleRedir = () => {
-        console.log('redir',dos);
+        //console.log('redir',dos);
         if (dos === true)  {
             return (
                 <Redirect push to={`/search/${query}`} />

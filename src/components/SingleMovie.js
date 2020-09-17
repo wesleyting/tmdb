@@ -39,7 +39,7 @@ const SingleMovie = ({match}) => {
                             </div>
                             {/*<h2>{singleMovie.tagline}</h2>*/}
                             <p className="single-desc">{singleMovie.overview}</p>
-                            <div class='rls-and-rating'>
+                            <div className='rls-and-rating'>
                                 <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
                                 <div className="single-rating">{doMovieRating(singleMovie)}</div>
                             </div>
