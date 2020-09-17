@@ -29,12 +29,11 @@ const SingleMovie = ({match}) => {
     } else {
         return (
             <main>
-                <div className="content-wrapper">
+                <div className="single-wrapper">
                     <div className="single-movie-info">
-                        {doMovieImages(singleMovie, posterWidth,'poster')}
-                        {doMovieImages(singleMovie, posterWidth, 'backdrop')}
+                        <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}</div>
                         <div className="single-text-info">
-                            <h1>{singleMovie.title} <FaveButton item={singleMovie} classNm={'single-fave-btn'}/></h1>
+                            <h1>{singleMovie.title} <FaveButton item={singleMovie} className={'single-fave-btn'}/></h1>
                             <h2>{singleMovie.tagline}</h2>
                             <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
                             <div className="single-rating">{doMovieRating(singleMovie)}</div>
