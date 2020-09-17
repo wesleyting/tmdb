@@ -33,12 +33,17 @@ const SingleMovie = ({match}) => {
                     <div className="single-movie-info">
                         <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}</div>
                         <div className="single-text-info">
-                            <h1>{singleMovie.title} <FaveButton item={singleMovie} className={'single-fave-btn'}/></h1>
-                            <h2>{singleMovie.tagline}</h2>
-                            <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
-                            <div className="single-rating">{doMovieRating(singleMovie)}</div>
-                            <p className="single-runtime">{min2hr(singleMovie.runtime)} </p> 
+                            <div className='single-title'>
+                                <h1>{singleMovie.title}</h1> 
+                                <div className='single-fave-btn'><FaveButton item={singleMovie}  /></div>
+                            </div>
+                            {/*<h2>{singleMovie.tagline}</h2>*/}
                             <p className="single-desc">{singleMovie.overview}</p>
+                            <div class='rls-and-rating'>
+                                <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
+                                <div className="single-rating">{doMovieRating(singleMovie)}</div>
+                            </div>
+                            {/*<p className="single-runtime">{//min2hr(singleMovie.runtime)} </p> */}
                         </div>
                     </div>
                 </div>
