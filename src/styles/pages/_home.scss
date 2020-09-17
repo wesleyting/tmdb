@@ -55,7 +55,8 @@
     .movie-title {
         font-weight: bold;
         text-transform: uppercase;
-        padding-top: 15px;
+        padding-top: 10px;
+        font-size: 15px;
 
         display: -webkit-box;
         text-overflow: ellipsis;
@@ -68,15 +69,27 @@
         width: 47%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 10px;
+        
 
         .movie-desc {
             display: -webkit-box;
             text-overflow: ellipsis;
             overflow: hidden;
-            -webkit-line-clamp: 7;
+            -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;  
         }
+    }
+
+    .movie-rls {
+        padding-top: 7px;
+    }
+
+    .movie-rating {
+         padding: 4px 0;
+    }
+
+    .movie-rls, .movie-rating, .movie-desc {
+        font-size: 13px;
     }
     
     .poster-link img {
