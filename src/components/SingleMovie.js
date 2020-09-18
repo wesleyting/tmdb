@@ -27,7 +27,7 @@ const SingleMovie = ({match}) => {
         return null;
     } else {
         return (
-            <main>
+            <main className='single-main'>
                 <div className="single-wrapper">
                     <SearchBar />
                     <div className="single-movie-info">
@@ -41,7 +41,7 @@ const SingleMovie = ({match}) => {
                             <p className="single-desc">{singleMovie.overview}</p>
                             <div className='rls-and-rating'>
                                 <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
-                                <div className="single-rating">{doMovieRating(singleMovie)}</div>
+                                <p className="single-rating">{doMovieRating(singleMovie)}</p>
                             </div>
                             {/*<p className="single-runtime">{//min2hr(singleMovie.runtime)} </p> */}
                         </div>
