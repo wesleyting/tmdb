@@ -3,7 +3,7 @@ import { MONTH_FORMAT } from '../globals/variables';
 const parseDate = (str) => {
 
     let ms = new Date(Date.parse(str));
-    ms.setHours(ms.getHours()+24);
+    ms.setMinutes(ms.getMinutes()+ms.getTimezoneOffset());
 
     const fmtMonth = (month, fmt) => {
         let months = [];
