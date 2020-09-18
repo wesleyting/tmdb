@@ -1,0 +1,35 @@
+.search-btn {
+    font-family: $bodyFont;
+    border: $buttonBorder;
+    margin-top: 10px;
+    padding: 4px;
+    width: 60px;
+    border-radius: $buttonRadius;
+}
+
+.searchbar {
+    font-family: $bodyFont;
+    border: $buttonBorder;
+    margin-right: 10px;
+    width: 240px;
+    padding: 4px;
+    border-radius: $buttonRadius;
+}
+
+.search-crumb { 
+    h2 {
+        padding-top: 20px;
+    }
+}
+
+.search-btn-data button {
+    width: 140px;
+}
+
+#cl-faves {
+    margin-top: 15px;
+    border-radius: $buttonRadius;
+    border: $buttonBorder;
+    padding: 4px 15px;
+    font-family: $bodyFont;
+}

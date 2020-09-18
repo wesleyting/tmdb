@@ -32,7 +32,7 @@ const SearchBar = ({type, q}) => {
         return (
             <div className="search-bar">
                 <form onSubmit={doQuery} action="#">                
-                    <input type="text" name="searchbar" defaultValue={query} onChange={handleQuery}></input>
+                    <input type="text" className="searchbar" defaultValue={query} onChange={handleQuery}></input>
                     <button className="search-btn" type="submit">{searchText}</button>
                 </form>
                 {handleRedir()}
