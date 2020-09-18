@@ -9,6 +9,7 @@ import Favorites from '../components/Favorites';
 import SearchResults from '../components/SearchResults';
 import PageNotFound from '../components/PageNotFound';
 import SingleMovie from '../components/SingleMovie';
+import SearchPage from '../components/SearchPage';
 
 
 const AppRouter = () => (
@@ -20,6 +21,7 @@ const AppRouter = () => (
                 <Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'}><About /></Route>
 				<Route path={'/favorites'} exact><Favorites /></Route>
+                <Route path={'/search-page'}><SearchPage /></Route>
 				<Route path={'/search/:query'} component={SearchResults} exact></Route>
                 <Redirect from={'/search/movie/:id'} to={'/movie/:id'} />
                 <Route path={'/movie/:id'} component={SingleMovie} exact></Route>
