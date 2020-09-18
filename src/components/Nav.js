@@ -40,7 +40,7 @@ function Nav() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/search-page' className='nav-links' onClick=
+            <Link to='/search' className='nav-links' onClick=
             {closeMobileMenu}>
               Search
             </Link>
