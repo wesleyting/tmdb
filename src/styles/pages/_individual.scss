@@ -6,9 +6,15 @@
 
 }
 
+.single-wrapper {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
 .single-text-info {
     background-color: $contentColour;
-    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding: 50px 35px 20px 35px;
@@ -58,16 +64,16 @@
 }
 
 @media(min-width: 500px) {
-    .single-text-info {
-        max-width: 450px;
+    .single-wrapper {
+        max-width: 480px;
     }
 }
 
-
-@media (min-width: 680px) {
+@media (min-width: 690px) {
 
     .single-wrapper { 
         margin-bottom: 40px;
+        max-width: 660px;
     }
 
     .single-movie-info {
@@ -75,7 +81,6 @@
         justify-content: center;
         margin-top: 40px;
         margin-bottom: 30px;
-        max-width: 95%;
         height: 405px;
         margin-left: auto;
         margin-right: auto;
@@ -91,8 +96,6 @@
     }
 
     .single-text-info {
-        //height: 390px;
-        //min-width: 400px;
         padding: 25px 45px 20px 30px;
 
         h1 {
@@ -118,14 +121,16 @@
     }
 }
 
-@media(min-width: 900px) {
+@media(min-width: 910px) {
 
     .single-movie-info {
         margin-bottom: 60px;
     }
 
+    .single-wrapper {
+        max-width: 870px;
+    }
     .single-text-info {
-        max-width: 530px;
         height: 435px;
         padding: 30px 60px 0 45px;
 

@@ -29,7 +29,7 @@ const SingleMovie = ({match}) => {
         return (
             <main className='single-main'>
                 <div className="single-wrapper">
-                    <SearchBar />
+                    <div className='single-search'><SearchBar/></div>
                     <div className="single-movie-info">
                         <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}</div>
                         <div className="single-text-info">
