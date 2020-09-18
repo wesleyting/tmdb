@@ -15,13 +15,13 @@ const Pagination = ( {results, handleChange} ) => {
     }   
 
     if (total > 1) {
-        pageNavs.push(<div key="0" className="pagi-prev"><button onClick={() => {handlePagi(curr-1)}} disabled={minDis}>{`\u003c\u003c`}</button></div>);
-        pageNavs.push(<div key="1" className="pagi-next"><button onClick={() => {handlePagi(curr+1)}} disabled={maxDis}>{`\u003e\u003e`}</button></div>);
+        pageNavs.push(<div key="0" ><button className="pagi-prev" onClick={() => {handlePagi(curr-1)}} disabled={minDis}>Previous</button></div>);
+        pageNavs.push(<div key="1" ><button className="pagi-next" onClick={() => {handlePagi(curr+1)}} disabled={maxDis}>Next</button></div>);
     }
 
     return (
         <div className="bottom-pagination">
-            {pageNavs}
+            <div className="pagi-wrap">{pageNavs}</div>
         </div>
 
     )
