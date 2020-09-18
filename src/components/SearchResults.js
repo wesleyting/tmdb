@@ -34,8 +34,9 @@ const SearchResults = ({match}) => {
                 <h2>Showing results for "{query}":</h2>
             </div>
             <div className="movie-grid"><MovieList grid={grid}/></div>
+            <Pagination results={pagi} handleChange={handlePagi}/>
         </div>
-        <Pagination results={pagi} handleChange={handlePagi}/>
+        
         </main>
     )
 };
