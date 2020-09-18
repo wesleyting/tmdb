@@ -1,4 +1,43 @@
 
+
+.about-img {
+    background-image: linear-gradient(to bottom,  #4798b12d,  #26385552), url('../../images/about-banner-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.about-text {
+    font-family: $headerFont;
+    color: $contentColour;
+    position: absolute;
+    top: 20%;
+    font-size: 30px;
+    padding-left: 40px;
+    text-shadow: 1px 1px 5px black;
+    margin-right: 25px;
+    margin-top: 10px;
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
 .about-h1 {
     text-align: center;
     padding-top: 30px;
@@ -11,11 +50,14 @@
 .tmdb-img {
     width: 20%;
     margin: auto;
+    padding-top: 20px;
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
+    padding: 40px 0;
+    margin-bottom: 20px;
 }
 
 .about-info {
@@ -50,26 +92,19 @@
 
 @media(min-width: 880px) {
 
-    .about {
-        margin-top: 40px;
-    }
     .about-content {
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
         max-width: 880px;
         justify-content: space-between;
-        padding-top: 10px;
+        margin-bottom: 25px;
     }
 
     .about-h1 {
         padding-top: 20px;
     }
 
-    .wrapper {
-        min-height: 100vh;
-        background-color: $backgroundColour;
-    }
 
     .about-info {
         height: 325px;

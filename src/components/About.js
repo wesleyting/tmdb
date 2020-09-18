@@ -4,7 +4,12 @@ import TMDBLogo from '../images/tmdb-logo.svg';
 const About = () => (
     <main>
         <div className="about">
-            <h1 className="about-h1">Welcome to Reel Talk!</h1>
+            <div className="about-img">
+                <div className="about-text">
+                    <h1>Welcome to Reel Talk! </h1>
+                    <p>Learn more about the latest releases, search by category, and keep track of your favourites.</p>
+                </div>
+            </div>
             <div className="about-content">
                 <div className="about-info">
                     <h2>About the Project</h2>
