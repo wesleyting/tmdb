@@ -6,7 +6,11 @@ const doMovieImages = (movie, size, type) => {
     let altType = type === 'poster' ? "movie poster" : "backdrop";
     let url = movie[imgType] === null ? NULL_POSTER : `${BASE_POSTER}${size}/${movie[imgType]}`;
 
-    return <img className={`${type}-img`} src={url} alt={`${movie.title} ${altType}`}/>;
+    let altText = `${movie.title} ${altType}`;
+    if (url === NULL_POSTER) {
+        altText = `We do not have a ${altType} image for ${movie.title}.`
+    }
+    return <img className={`${type}-img`} src={url} alt={altText}/>;
 }
 
 export default doMovieImages;
