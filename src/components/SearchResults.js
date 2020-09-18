@@ -3,6 +3,7 @@ import { BASE_SEARCH, API_KEY, SEARCH_QUERY, BASE_PAGE, DEFAULT_PAGE } from '../
 import MovieList from './MovieList';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const SearchResults = ({match}) => {
 
@@ -28,13 +29,16 @@ const SearchResults = ({match}) => {
 
     return (
         <main>
-        <div className="content-wrapper">
+        <motion.div className="content-wrapper"
+                    exit={{ opacity: 0 }} 
+                    animate={{ opacity:1 }} 
+                    initial={{ opacity:0 }}>
             <SearchBar q={query}/>
             <div className="search-crumb">
                 <h2>Showing results for "{query}":</h2>
             </div>
             <div className="movie-grid"><MovieList grid={grid}/></div>
-        </div>
+        </motion.div>
         <Pagination results={pagi} handleChange={handlePagi}/>
         </main>
     )

@@ -1,8 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import { storeFave, isFaveStored, getFaves, delFave } from '../utilities/faveStorage';
-// import FilledFavHeart from '../images/heart-filled.png';
-// import EmptyFavHeart from '../images/heart-empty.png';
 
 const EMPTY_HEART = <div className="emptyHeart"></div>;
 const FILLED_HEART = <div className="filledHeart"></div>;

@@ -9,23 +9,14 @@ import Favorites from '../components/Favorites';
 import SearchResults from '../components/SearchResults';
 import PageNotFound from '../components/PageNotFound';
 import SingleMovie from '../components/SingleMovie';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 
 
 const AppRouter = () => (
 	<Router>
 		<div className="wrapper">
-
             <Header />
             <Nav />
-            <Route render={({location}) => (
-            <TransitionGroup>
-            <CSSTransition
-                key={location.key}
-                timeout={450}
-                classNames="fade">
-                <Switch location={location}>
+                <Switch>
                     <Route path={'/'} exact><Home /></Route>
                     <Route path={'/about'}><About /></Route>
                     <Route path={'/favorites'} exact><Favorites /></Route>
@@ -34,9 +25,6 @@ const AppRouter = () => (
                     <Route path={'/movie/:id'} component={SingleMovie} exact></Route>
                     <Route path={'/*'}><PageNotFound /></Route>
                 </Switch>
-            </CSSTransition>
-        </TransitionGroup>
-            )} />
             <Footer />
         </div>
     </Router>

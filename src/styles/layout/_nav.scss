@@ -1,17 +1,22 @@
 .navbar {
   background-color: $headerbackgroundColour;
-  height: 80px;
+  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  box-shadow: 0 20px 4px -1px rgba(255, 0, 0, 0.25);
+  // font-family: $headerFont;
+  z-index: 1000;
 
   .navbar-logo {
     justify-self: start;
-    margin-left: 20px;
+    // margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     width: 110px;
+    padding-top: 6px;
+
   }
 
   .nav-menu {
@@ -67,7 +72,7 @@
       width: 100%;
       height: 90vh;
       position: absolute;
-      top: 80px;
+      top: 72px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;

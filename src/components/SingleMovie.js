@@ -6,6 +6,7 @@ import doMovieImages from '../utilities/doMovieImages';
 import doMovieRating from '../utilities/doMovieRating';
 import parseDate from '../utilities/parseDate';
 import min2hr from '../utilities/min2hr';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const SingleMovie = ({match}) => {
     let posterWidth = "original";
@@ -28,14 +29,17 @@ const SingleMovie = ({match}) => {
     } else {
         return (
             <main>
-                <div className="single-wrapper">
+                <motion.div className="single-wrapper"
+                            exit={{ opacity: 0 }} 
+                            animate={{ opacity:1 }} 
+                            initial={{ opacity:0 }}>
                     <SearchBar />
                     <div className="single-movie-info">
-                        <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}</div>
+                        <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}
+                        <div className='single-fave-btn'><FaveButton item={singleMovie}  /></div></div>
                         <div className="single-text-info">
                             <div className='single-title'>
                                 <h1>{singleMovie.title}</h1> 
-                                <div className='single-fave-btn'><FaveButton item={singleMovie}  /></div>
                             </div>
                             {/*<h2>{singleMovie.tagline}</h2>*/}
                             <p className="single-desc">{singleMovie.overview}</p>
@@ -46,7 +50,7 @@ const SingleMovie = ({match}) => {
                             {/*<p className="single-runtime">{//min2hr(singleMovie.runtime)} </p> */}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </main>
         );
     }

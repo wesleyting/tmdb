@@ -3,7 +3,6 @@
     max-width: 390px;
     padding-top: 20px;
     margin: auto;
-
 }
 
 .wrapper {
@@ -16,10 +15,10 @@
 
 .header-img {
     background-image: linear-gradient(to bottom,  #2638557a,  #2638559a), url('../../images/demo2.jpg');
-    background-position: center 10% ;
+    background-position: center center ;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    height: 60vh;
 }
 
 .header-text { 

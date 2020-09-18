@@ -5,6 +5,7 @@ import SelectFilter from './SelectFilter';
 //import headerImage from '../images/demo2.jpg';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Home = () => {
 
@@ -34,7 +35,10 @@ const Home = () => {
     
     return (
         <main>
-            <div className="content-wrap">
+            <motion.div className="content-wrap" 
+                        exit={{ opacity: 0 }} 
+                        animate={{ opacity:1 }} 
+                        initial={{ opacity:0 }}>
             <div className="header-img">
 
                 <div className="header-text">
@@ -48,7 +52,7 @@ const Home = () => {
                 <div className="movie-grid"><MovieList grid={grid}/></div>
             </div>
             <Pagination results={pagi} handleChange={handlePagi}/>
-            </div>
+            </motion.div>
         </main>
     );
 }
