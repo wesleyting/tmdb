@@ -39,6 +39,12 @@ function Nav() {
               Favorites
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link to='/search-page' className='nav-links' onClick=
+            {closeMobileMenu}>
+              Search
+            </Link>
+          </li>
         </ul>
       </nav>
     </>
