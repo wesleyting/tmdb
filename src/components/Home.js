@@ -34,6 +34,7 @@ const Home = () => {
     
     return (
         <main>
+            <div className="content-wrap">
             <div className="header-img">
 
                 <div className="header-text">
@@ -47,6 +48,7 @@ const Home = () => {
                 <div className="movie-grid"><MovieList grid={grid}/></div>
             </div>
             <Pagination results={pagi} handleChange={handlePagi}/>
+            </div>
         </main>
     );
 }

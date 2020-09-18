@@ -16,8 +16,10 @@
 
 .header-img {
     background-image: linear-gradient(to bottom,  #2638557a,  #2638559a), url('../../images/demo2.jpg');
+    background-position: center 10% ;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .header-text { 

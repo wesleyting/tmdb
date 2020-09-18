@@ -1,3 +1,4 @@
+import React from 'react'
 import PLACEHOLDER_POSTER from '../images/reeltalk-logo.png';
 
 // DEFAULTS
@@ -20,7 +21,6 @@ export const BASE_PAGE = `&page=`;
 export const URL_FILTER = {pop: "popular", now: "now_playing", top: "top_rated", soon: "upcoming"};
 
 
-
 // Movie Box Constants
 export const MONTH_FORMAT = "long"; //use short for abbrv
 
@@ -30,3 +30,5 @@ export const SEARCH_QUERY = "&query=";
 //null poster
 export const BASE_POSTER = "https://image.tmdb.org/t/p/";
 export const NULL_POSTER = PLACEHOLDER_POSTER;
+
+
