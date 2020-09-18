@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Redirect } from 'react-router-dom';
 
-const SearchBar = ({type, q}) => {
+const SearchBar = ({type, q = null}) => {
     const [query, setQuery] = useState(q);
     const [dos, setDOS] = useState(false);    
     let searchText = type === "fave" ? "Search database" : "Search";
@@ -11,11 +11,13 @@ const SearchBar = ({type, q}) => {
         if (dos === true) {   
             setDOS(false);
         }
-        
     }
 
     const doQuery = (e) => {
         e.preventDefault();
+        if (query === null) {
+            setQuery("");            
+        }
         setDOS(true);
     }
 
