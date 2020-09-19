@@ -33,10 +33,10 @@ const SingleMovie = ({match}) => {
             animate={{ opacity:1 }} 
             initial={{ opacity:0 }}>
                 <div className="single-wrapper">
-                    <div className='single-search'><SearchBar/></div>
+                    {/* <div className='single-search'><SearchBar/></div> */}
                     <div className="single-movie-info">
                         <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}
-                        <div className='single-fave-btn'><FaveButton item={singleMovie}  /></div></div>
+                        <div className='favorite'><FaveButton item={singleMovie}  /></div></div>
                         <div className="single-text-info">
                             <div className='single-title'>
                                 <h1>{singleMovie.title}</h1> 
