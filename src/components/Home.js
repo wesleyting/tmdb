@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="content-wrapper">
-                <SearchBar />
+                {/* <SearchBar /> */}
                 <SelectFilter handleChange={handleFilter} filterChoices={URL_FILTER} defaultFilter={DEFAULT_FILTER} />
                 <div className="movie-grid"><MovieList grid={grid}/></div>
                 <Pagination results={pagi} handleChange={handlePagi}/>
