@@ -7,13 +7,13 @@ const SearchPage = () => (
 	exit={{ opacity: 0 }} 
 	animate={{ opacity:1 }} 
 	initial={{ opacity:0 }}>
-		<section className = "content-wrapper">
+		<section className = "search-wrapper">
 			<h1>Search Page</h1>
-			<p>Looking for a particular movie? Refine your results by typing in a movie name.</p>
+			<p>Looking for a particular movie?</p>
+			<p>Refine your results by typing in a movie name.</p>
 			<SearchBar/>
 		</section>
 	</motion.main>
 );
-
 
 export default SearchPage;
