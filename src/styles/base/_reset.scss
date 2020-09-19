@@ -9,6 +9,14 @@ html {
     padding: 0;
   }
 
+  .wrapper {
+    min-height: 100vh;
+  }
+
+  content-wrap {
+    position: relative;
+  }
+
  
   img {
       max-width: 100%;
