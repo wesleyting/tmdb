@@ -1,5 +1,5 @@
 import PLACEHOLDER_POSTER from '../images/no-poster.png';
-import PLACEHOLDER_POSTER from '../images/reeltalk-logo.png';
+// import PLACEHOLDER_POSTER from '../images/reeltalk-logo.png';
 
 // DEFAULTS
 export const DEFAULT_FILTER = "pop";

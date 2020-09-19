@@ -3,7 +3,7 @@ import MovieList from './MovieList';
 import SearchBar from './SearchBar';
 import { getFaves, clearFaves } from '../utilities/faveStorage';
 import { Link } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 const Favorites = () => {
     let [grid, setGrid] = useState(getFaves('faves'));

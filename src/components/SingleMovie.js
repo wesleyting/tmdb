@@ -6,7 +6,7 @@ import doMovieImages from '../utilities/doMovieImages';
 import doMovieRating from '../utilities/doMovieRating';
 import parseDate from '../utilities/parseDate';
 import min2hr from '../utilities/min2hr';
-import { AnimatePresence, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 const SingleMovie = ({match}) => {
     let posterWidth = "original";

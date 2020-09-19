@@ -1,6 +1,6 @@
 import React from 'react';
 import TMDBLogo from '../images/tmdb-logo.svg';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const About = () => (
     <main>

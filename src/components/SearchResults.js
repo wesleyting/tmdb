@@ -3,7 +3,7 @@ import { BASE_SEARCH, API_KEY, SEARCH_QUERY, BASE_PAGE, DEFAULT_PAGE } from '../
 import MovieList from './MovieList';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const SearchResults = ({match}) => {
 
@@ -39,7 +39,7 @@ const SearchResults = ({match}) => {
                         <p>Please try another search.</p>
                         <SearchBar />
                     </div>
-                </div>
+                </motion.div>
             );
         } else if (Array.isArray(grid) && grid.length > 0) {
             return (

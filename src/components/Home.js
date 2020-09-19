@@ -5,7 +5,7 @@ import SelectFilter from './SelectFilter';
 //import headerImage from '../images/demo2.jpg';
 import SearchBar from './SearchBar';
 import Pagination from './Pagination';
-import { AnimatePresence, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 const Home = () => {
 
