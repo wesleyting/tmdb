@@ -30,7 +30,11 @@ const MovieList = ({grid}) => {
                     </p>
                     <p className="movie-rls">{parseDate(item.release_date)}</p>
                     {doMovieRating(item)}
-                    <p className="movie-desc">{item.overview}</p>                  
+                    <p className="movie-desc">{item.overview}</p>  
+                    <div className="mobile-poster-buttons">
+                        <div className="favorite"><FaveButton item={item} /></div>
+                        <div className="more-info"><Link to={`movie/${item.id}`}><button>More info...</button></Link></div>
+                    </div>            
                 </div>
             </div>
         );

@@ -79,6 +79,10 @@
             overflow: hidden;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;  
+
+            @media (min-width: 900px) {
+                -webkit-line-clamp: 6;
+            }
         }
     }
 
@@ -90,21 +94,21 @@
          padding: 4px 0;
     }
 
-    .movie-rls, .movie-rating, .movie-desc {
+    .movie-rls, .movie-rating {
         font-size: 13px;
     }
-    
-    .poster-link img {
-        display: block;
-        pointer-events: none;
-    }
-    
-    a.poster-link  {
-        pointer-events: none;
-    }
 
+    .movie-desc {
+        font-size: 11px;
+    }
+ 
+
+    .poster-link img,
+    a.poster-link,
     img {
-        pointer-events: none;
+        @media (min-width: 900px) {
+            pointer-events: none;
+        }
     }
 
 }
