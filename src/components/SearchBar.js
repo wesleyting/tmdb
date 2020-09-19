@@ -22,15 +22,12 @@ const SearchBar = ({type, q = null}) => {
     }
 
     const handleRedir = () => {
-        //console.log('redir',dos);
         if (dos === true)  {
             return (
                 <Redirect push to={`/search/${query}`} />
             );            
         }
     }
-
-
         return (
             <div className="search-bar">
                 <form onSubmit={doQuery} action="#">                
