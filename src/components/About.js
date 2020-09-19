@@ -10,8 +10,8 @@ const About = () => (
         <div className="about">
             <div className="about-img">
             <div className="header-text">
-                    <h1>Welcome to Reel Talk! </h1>
-                    <p>Learn more about the latest releases, search by category, and keep track of your favourites.</p>
+                    <h1>What is Reel Talk? </h1>
+                    <p>Learn more about the website database and the team behind it.</p>
                 </div>
             </div>
             <div className="about-content">
