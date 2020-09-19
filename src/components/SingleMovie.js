@@ -47,7 +47,7 @@ const SingleMovie = ({match}) => {
                                 <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
                                 {doMovieRating(singleMovie, "single")}
                             </div>
-                            {/*<p className="single-runtime">{//min2hr(singleMovie.runtime)} </p> */}
+                            {/*<p className="single-runtime">{min2hr(singleMovie.runtime)} </p> */}
                         </div>
                     </div>
                 </div>

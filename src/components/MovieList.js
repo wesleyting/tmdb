@@ -6,9 +6,6 @@ import parseDate from '../utilities/parseDate';
 import FaveButton from './FaveButton';
 
 const MovieList = ({grid}) => {
-    //There are specific dimensions for poster images: w500 or original, not sure if there are other sizes?
-    //Also there is the images api call, but the dimension they return do not match
-    //from: https://developers.themoviedb.org/3/getting-started/images
     let posterWidth = "w500";
 
     if (!grid) {

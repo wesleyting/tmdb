@@ -8,7 +8,6 @@ const SelectFilter = ({handleChange, defaultFilter, filterChoices}) => {
 
     return <select onChange={handleFilter} defaultValue={defaultFilter}>
             {Object.entries(filterChoices).map((item, i) => {
-                // format the string
                 let itemKey = item[0];
                 let itemValue, itemValueFormat = item[1].split("_");
                 for (let j = 0; j < itemValueFormat.length; j++) {

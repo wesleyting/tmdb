@@ -17,8 +17,9 @@
 @import 'layout/body';
 
 // Pages
-@import './pages/favorites';
-@import './pages/home';
-@import './pages/pageNotFound';
-@import './pages/individual';
-@import './pages/search';
+@import 'pages/favorites';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/pageNotFound';
+@import 'pages/individual';
+@import 'pages/search';

@@ -3,7 +3,10 @@ import getWinDim from '../utilities/getWinDim';
 
 const Pagination = ( {results, handleChange} ) => {
 
-    let total = results !== null ? results.total_pages : 0;
+    let total;
+    if (results !== null) {
+        total = results.total_pages;
+    }//results !== null ? results.total_pages : 0;
     let curr = results !== null ? results.page : 1;
     let minDis = curr <= 1 ? true : false;
     let maxDis = curr === total ? true: false;
@@ -11,7 +14,7 @@ const Pagination = ( {results, handleChange} ) => {
 
     const calcPagiPer = (dims) => {
         if (dims >= 760) {
-            return 10;
+            return 10
         } else if (dims >= 500) {
             return 5;
         } else {
@@ -29,13 +32,9 @@ const Pagination = ( {results, handleChange} ) => {
     window.addEventListener('resize', handleResize, false);
 
     useEffect( () => {
-        let mounted = true;
         setWinWidth(getWinDim("width"));
-        if (mounted === true) {
-            setPagiPer(calcPagiPer(getWinDim("width")));
-        } 
-        return () => mounted = false;
-    }, [winWidth]);    
+        setPagiPer(calcPagiPer(getWinDim("width")));
+    }, [winWidth, maxPagiPerPage, total]); 
 
     const handlePagi = (p) => {
         handleChange(p);
@@ -51,11 +50,11 @@ const Pagination = ( {results, handleChange} ) => {
 
     const doPagiNums = () => {
         if (curr > Math.floor(maxPagiPerPage / 2)) {
-            for (let i = curr - Math.floor(maxPagiPerPage / 2); i < curr + Math.ceil(maxPagiPerPage / 2); i++) {
+            for (let i = curr - Math.floor(maxPagiPerPage / 2); i <= Math.min(total, curr + Math.ceil(maxPagiPerPage / 2)); i++) {
                 pageNavs.push(<div key={i}><button className={`pagi-pg ${currPageClass(i)}`} onClick={() => {handlePagi(i)}}>{i}</button></div>);
             }
         } else {
-            for (let i = 1; i <= maxPagiPerPage; i++) {
+            for (let i = 1; i <= Math.min(total, maxPagiPerPage); i++) {
                 pageNavs.push(<div key={i}><button className={`pagi-pg ${currPageClass(i)}`} onClick={() => {handlePagi(i)}}>{i}</button></div>);
             }
         }
@@ -71,13 +70,11 @@ const Pagination = ( {results, handleChange} ) => {
         }
         return pageNavs;
     }
-
     return (
         <div className="bottom-pagination">
             <div className="pagi-wrap">{doPagi()}</div>
         </div>
-
-    )
+    );
 
 }
 
