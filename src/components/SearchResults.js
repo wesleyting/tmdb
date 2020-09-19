@@ -30,10 +30,11 @@ const SearchResults = ({match}) => {
     const doResult = () => {
         if (!grid || (Array.isArray(grid) && grid.length === 0)) {
             return (
-                <motion.div className="content-wrapper"
+                <motion.div className="search-wrapper"
                 exit={{ opacity: 0 }} 
                 animate={{ opacity:1 }} 
                 initial={{ opacity:0 }}>
+                    <h1>Search Page</h1>
                     <div className="search-crumb">
                         <h2>No results for "{query}".</h2>
                         <p>Please try another search.</p>
@@ -43,10 +44,11 @@ const SearchResults = ({match}) => {
             );
         } else if (Array.isArray(grid) && grid.length > 0) {
             return (
-            <div className="content-wrapper"
+            <div className="search-wrapper"
             exit={{ opacity: 0 }} 
             animate={{ opacity:1 }} 
             initial={{ opacity:0 }}>
+                <h1>Search Page</h1>
                 <SearchBar q={query}/>
                 <div className="search-crumb">
                     <h2>Showing results for "{query}":</h2>
