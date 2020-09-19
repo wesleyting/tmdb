@@ -1,25 +1,24 @@
 // Abstracts
-@import './abstracts/variables';
+@import 'abstracts/variables';
 
 // Base
-@import './base/reset';
-@import './base/type';
+@import 'base/reset';
+@import 'base/type';
 
 // Components
-@import './components/buttons';
-@import './components/wrapper';
+@import 'components/buttons';
+@import 'components/wrapper';
+@import 'components/transition';
 
 // Layout
-@import './layout/body';
-@import './layout/footer';
-@import './layout/header';
-@import './layout/nav';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/body';
 
 // Pages
-@import './pages/about';
 @import './pages/favorites';
 @import './pages/home';
-@import './pages/watch';
 @import './pages/pageNotFound';
 @import './pages/individual';
 @import './pages/search';

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NotFoundImage from '../images/404.png';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const PageNotFound = () => (
 	<main>
-		<section className = "page-not-found">
+		<motion.section className = "page-not-found"
+		            exit={{ opacity: 0 }} 
+					animate={{ opacity:1 }} 
+					initial={{ opacity:0 }}>
 			<div className="not-found-info">
 				<img src={NotFoundImage}></img>
 				<h1>Page Not Found</h1>
@@ -13,7 +17,7 @@ const PageNotFound = () => (
 			<div className="not-found-text">
 				<p>Click <Link to={'/'}>here</Link> to go back to the home page.</p>
 			</div>
-		</section>
+		</motion.section>
 	</main>
 );
 

@@ -1,4 +1,5 @@
 import PLACEHOLDER_POSTER from '../images/no-poster.png';
+import PLACEHOLDER_POSTER from '../images/reeltalk-logo.png';
 
 // DEFAULTS
 export const DEFAULT_FILTER = "pop";
@@ -27,3 +28,5 @@ export const SEARCH_QUERY = "&query=";
 //null poster
 export const BASE_POSTER = "https://image.tmdb.org/t/p/";
 export const NULL_POSTER = PLACEHOLDER_POSTER;
+
+

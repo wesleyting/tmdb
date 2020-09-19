@@ -4,13 +4,12 @@ main {
 }
 
 .wrapper {
+    background-color: $backgroundColour;
     position: relative;
-    min-height: 100%;
 }
 
-.wrapper {
-    min-height: 100vh;
-    background-color: $backgroundColour;
+.content-wrap {
+    position: relative;
 }
 
 .header-text {

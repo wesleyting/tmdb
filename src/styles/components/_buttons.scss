@@ -3,7 +3,7 @@
 }
 
 .poster-buttons {
-    // opacity: 0;
+    opacity: 0;
     position: absolute;
     text-align: center;
     top: 0;
@@ -17,8 +17,8 @@
 
     .more-info {
         position: absolute;
-        top: 55%;
-        right: 0;
+        top: 60%;
+        right: 28%;
 
         button {
             background-color: transparent;
@@ -41,26 +41,44 @@
 }
 
 
-.favorite {
-    position: absolute;
-    top: 25%;
-    right: 25%;
+
+.fave-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
     background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
 
-    a {
-        position: absolute;
-        width: 45px;
-        height: 45px;
-        cursor: pointer;
-        // filter: invert(91%) sepia(89%) saturate(0%) hue-rotate(116deg) brightness(102%) contrast(101%);
+    
+    .emptyHeart {
+        background: url("../../images/heart-empty.png");
 
+        &:hover {
+            filter: invert(30%) sepia(90%) saturate(9000%) hue-rotate(350deg) brightness(96%) contrast(123%);
+        }
     }
 
-    a:hover {
-        // filter: invert(20%) sepia(94%) saturate(7353%) hue-rotate(358deg) brightness(105%) contrast(117%);
-        // transition: all 0.5s ease;
+    .filledHeart {
+        background: url("../../images/heart-filled.png");
+
+        // &:hover {
+        //     filter: invert(0%) sepia(59%) saturate(31%) hue-rotate(151deg) brightness(0%) contrast(106%);
+        // }
+    }
+
+    .emptyHeart,
+    .filledHeart {
+        width: 50px;
+        height: 50px;
+        background-size: 100%;
+        position: absolute;
+        top: 25%;
+        
     }
 }
+
 .bottom-pagination {
     display: inline-block;
     .pagi-wrap {
@@ -95,3 +113,9 @@
         border-radius: 0px 8px 8px 0px;
     }
 }
+
+
+
+
+
+
