@@ -1,5 +1,3 @@
-
-
 .about-img {
     background-image: linear-gradient(to bottom,  #4798b12d,  #26385552), url('../../images/about-banner.jpg');
     background-repeat: no-repeat;
@@ -69,7 +67,12 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: $boxShadow;
-    padding: 15px;
+    padding: 25px;
+    border-radius: 6px;
+
+    h2 {
+        padding: 10px 0 15px 0;
+    }
 
     a {
         text-decoration: none;

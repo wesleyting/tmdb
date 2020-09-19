@@ -11,13 +11,13 @@ const About = () => (
             <div className="about-img">
             <div className="header-text">
                     <h1>What is Reel Talk? </h1>
-                    <p>Learn more about the website database and the team behind it.</p>
+                    <p>Learn more about the website and the team behind it.</p>
                 </div>
             </div>
             <div className="about-content">
                 <div className="about-info">
                     <h2>About the Project</h2>
-                    <p>Reel Talk is a dynamic movie database website that allows users to discover movies based on different categories, as well as allowing users to saving their favourite ones. Reel Talk credits The Movie Datbase (TMDB) as the source for its data.</p>
+                    <p>Reel Talk is a dynamic movie database website that lets users discover movies based on different categories, as well as allowing them to save their favourite ones. Reel Talk credits The Movie Database (TMDB) as the source for its data.</p>
                     <div className="tmdb-img"><img src= {TMDBLogo} /></div>
                 </div>
                 <div className="about-info">
