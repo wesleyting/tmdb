@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import getWinDim from '../utilities/getWinDim';
+import React from 'react';
 
 const Pagination = ( {results, handleChange} ) => {
 
