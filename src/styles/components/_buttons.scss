@@ -39,13 +39,9 @@
     }
 }
 
-
-
 .poster-container:hover .poster-buttons {
     opacity: 1;
 }
-
-
 
 .fave-btn {
     height: 50px;
@@ -93,7 +89,6 @@
         display: none;
     }
 
-    
     .emptyHeart {
         background: url("../../images/empty-heart-dark.png");
 
@@ -174,6 +169,7 @@
     .pagi-prev {
         border-radius: 8px 0px 0px 8px;
     }
+    
     .pagi-next {
         border-radius: 0px 8px 8px 0px;
     }
