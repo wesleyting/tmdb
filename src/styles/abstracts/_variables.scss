@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@700&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Quicksand&display=swap");
 
 // Style Variables
 
@@ -11,9 +11,10 @@ $backgroundColour: #ECF3F3;
 $hoverColour: #9b9b9b;
 $contentColour: #FAFEFF;
 $boxShadow: 1px 1px 18px #d8d8d8;
+$textShadow: 2px 2px 5px black;
 
 // Typography
-$headerFont: 'Overpass', sans-serif;
+$headerFont: 'Merriweather Sans', sans-serif;
 $bodyFont: 'Quicksand', sans-serif;
 
 // Button Styles 
