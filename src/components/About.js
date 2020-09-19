@@ -1,14 +1,19 @@
 import React from 'react';
 import TMDBLogo from '../images/tmdb-logo.svg';
-import { motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 const About = () => (
-    <main>
-        <motion.div className="about"
-                    exit={{ opacity: 0 }} 
-                    animate={{ opacity:1 }} 
-                    initial={{ opacity:0 }}>
-            <h1 className="about-h1">Welcome to Reel Talk!</h1>
+    <motion.main
+    exit={{ opacity: 0 }} 
+    animate={{ opacity:1 }} 
+    initial={{ opacity:0 }}>
+        <div className="about">
+            <div className="about-img">
+                <div className="about-text">
+                    <h1>Welcome to Reel Talk! </h1>
+                    <p>Learn more about the latest releases, search by category, and keep track of your favourites.</p>
+                </div>
+            </div>
             <div className="about-content">
                 <div className="about-info">
                     <h2>About the Project</h2>
@@ -20,8 +25,8 @@ const About = () => (
                     <p><a href="http://asham.bcitwebdeveloper.ca/">Aaron Sham</a>, <a href="http://ckang.bcitwebdeveloper.ca/">Cassidy Kang</a>, and <a href="http://wting.bcitwebdeveloper.ca/">Wesley Ting</a> are the team behind Reel Talk. Currently, each member is enrolled in BCIT's Technical Web Designer program, where they are studying to become web designers/developers. Reel Talk is a collaborative project demonstrating the team's practical knowledge of React.js and accessing data from API keys.</p>
                 </div>
             </div>
-        </motion.div>
-    </main>
+        </div>
+    </motion.main>
 );
 
 export default About;

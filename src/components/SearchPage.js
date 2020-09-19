@@ -1,14 +1,18 @@
 import React from 'react';
 import SearchBar from './SearchBar';
+import {  motion } from 'framer-motion';
 
 const SearchPage = () => (
-	<main>
+	<motion.main
+	exit={{ opacity: 0 }} 
+	animate={{ opacity:1 }} 
+	initial={{ opacity:0 }}>
 		<section className = "content-wrapper">
 			<h1>Search Page</h1>
 			<p>Looking for a particular movie? Refine your results by typing in a movie name.</p>
 			<SearchBar/>
 		</section>
-	</main>
+	</motion.main>
 );
 
 
