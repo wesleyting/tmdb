@@ -9,7 +9,7 @@ const About = () => (
     initial={{ opacity:0 }}>
         <div className="about">
             <div className="about-img">
-                <div className="about-text">
+            <div className="header-text">
                     <h1>Welcome to Reel Talk! </h1>
                     <p>Learn more about the latest releases, search by category, and keep track of your favourites.</p>
                 </div>

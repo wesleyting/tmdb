@@ -19,7 +19,6 @@
 .search-wrapper { 
     padding: 35px;
     min-height: 100vh;
-    text-align: center;
 
     h1 {
         padding-bottom: 20px;
@@ -31,6 +30,11 @@
         font-size: 18px;
     }
 
+}
+
+.movie-grid {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .search-crumb { 
