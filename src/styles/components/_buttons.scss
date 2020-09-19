@@ -81,14 +81,15 @@
 
 .bottom-pagination {
     display: inline-block;
+    
     .pagi-wrap {
-        width: auto;
         display: flex;
+        justify-content: center;
         box-shadow: $boxShadow;
     }
 
     button {
-        padding: 12px 18px;
+        padding: 12px 14px;
         background: $contentColour;
         border: none;
 
@@ -112,10 +113,13 @@
     .pagi-next {
         border-radius: 0px 8px 8px 0px;
     }
+
+    .pagi-pg {
+        min-width: 52px;
+    }
+
+    .selected {
+        background: $dark;
+        color: white;
+    }
 }
-
-
-
-
-
-
