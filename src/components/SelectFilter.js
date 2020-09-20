@@ -1,21 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 const SelectFilter = ({handleChange, defaultFilter, filterChoices}) => {
 
-    let def = defaultFilter;
     const [sel, setSel] = useState(defaultFilter);
-
     const handleFilter = (e) => {
         setSel(e.target.value);
         handleChange(e.target.value);
     }
 
-    useEffect(() => {
-        setSelCls(sel);
-    }, [sel]);
-
     const setSelCls = (key) => {
-        console.log(def, key, sel);
         if (sel === key) {
             return "selected";
         } else {
