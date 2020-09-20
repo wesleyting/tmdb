@@ -10,10 +10,11 @@ import SearchResults from '../components/SearchResults';
 import PageNotFound from '../components/PageNotFound';
 import SingleMovie from '../components/SingleMovie';
 import SearchPage from '../components/SearchPage';
+import { APP_FOLDER_NAME } from '../globals/variables';
 
 
 const AppRouter = () => (
-	<Router>
+	<Router basename={APP_FOLDER_NAME}>
 		<div className="wrapper">
             <Header />
             <Nav />
