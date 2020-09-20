@@ -37,7 +37,7 @@ const SearchResults = ({match}) => {
                     <h1>Search Page</h1>
                     <div className="search-crumb">
                         <h2>No results for "{query}".</h2>
-                        <p>Please try another search.</p>
+                        <p className="search-msg">Please try another search.</p>
                         <SearchBar />
                     </div>
                 </motion.div>
@@ -48,7 +48,7 @@ const SearchResults = ({match}) => {
             exit={{ opacity: 0 }} 
             animate={{ opacity:1 }} 
             initial={{ opacity:0 }}>
-                <h1>Search Page</h1>
+                <h1 className="search-title-header">Search Page</h1>
                 <SearchBar q={query}/>
                 <div className="search-crumb">
                     <h2>Showing results for "{query}":</h2>
@@ -65,14 +65,7 @@ const SearchResults = ({match}) => {
         exit={{ opacity: 0 }} 
         animate={{ opacity:1 }} 
         initial={{ opacity:0 }}>
-            {/* <div className="content-wrapper">
-                <SearchBar q={query}/>
-                <div className="search-crumb">
-                    <h2>Showing results for "{query}":</h2>
-                </div>
-                <div className="movie-grid"><MovieList grid={grid}/></div>
-                <Pagination results={pagi} handleChange={handlePagi}/>
-            </div> */}
+
             {doResult()}
         
         </motion.main>

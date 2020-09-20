@@ -5,6 +5,14 @@
     padding: 4px;
     width: 60px;
     border-radius: $buttonRadius;
+
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(0, 89, 255);
+        color: white;
+    }
 }
 
 .searchbar {
@@ -23,12 +31,12 @@
     min-height: 100vh;
     max-width: 390px;
 
-    h1 {
+    h1.search-title-header {
         padding-bottom: 20px;
         font-size: 35px;
     }
 
-    p {
+    p.search-msg {
         padding-bottom: 15px;
         font-size: 20px;
     }
@@ -63,7 +71,13 @@
 
 @media (min-width: 1100px) {
     .searchbar {
+        padding: 12px 14px;
         width: 300px;
+    }
+
+    .search-btn {
+        padding: 12px 14px;
+        width: auto;
     }
 
     .search-wrapper {
