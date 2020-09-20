@@ -19,13 +19,17 @@
     padding-top: 6px;
   }
 
-  .search-bar {
+  .nav-search-bar {
     position: absolute;
-    left:9%;
-    top: 3px;
+    left:20%;
+    top: 5px;
     width: 100%;
     z-index: 1000000000;
     display: none;
+
+    .search-bar {
+      width: 500px;
+    }
 
     @media (min-width: 1180px) {
       display: block;

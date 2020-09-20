@@ -18,13 +18,13 @@ function Nav() {
         className='navbar-logo'>
           <img src={Logo} alt="Reel Talk Logo" />
         </Link>
-        <div className="search-bar">
-        <SearchBar /> 
-        </div>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <div className="nav-search-bar">
+        <SearchBar /> 
+        </div>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick=
             {closeMobileMenu}>
@@ -46,7 +46,7 @@ function Nav() {
           <li className='nav-item nav-item-search'>
             <Link to='/search' className='nav-links' onClick=
             {closeMobileMenu}>
-              Search <i class="fas fa-search search-icon"></i>
+              Search <i className="fas fa-search search-icon"></i>
             </Link>
           </li>
         </ul>
