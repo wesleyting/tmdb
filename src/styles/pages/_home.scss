@@ -40,7 +40,12 @@
 }
 
 .movie-title a {
-    color: #3451d4;
+    color: $dark;
+    text-decoration: none;
+
+    &:hover {
+        color: rgb(42, 78, 241);
+    }
 }
 
 
