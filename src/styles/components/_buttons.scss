@@ -151,6 +151,7 @@
         padding: 12px 14px;
         background: $contentColour;
         border: none;
+        outline: none;
 
         &:hover {
             background: $hoverColour;
@@ -228,6 +229,7 @@
         padding: 12px 14px;
         background: $contentColour;
         border: none;
+        outline: none;
 
         
         &:first-child button {
