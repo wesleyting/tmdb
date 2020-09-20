@@ -4,6 +4,14 @@
     margin-bottom: 40px;
     position: relative;
 
+
+.single-rating {
+    img {
+        padding-top: 0.4em;
+        max-width: 1.2em;
+        max-height: 1.2em;
+    }
+}    
     .emptyHeart {
         background: url("../../images/empty-heart-dark.png");
 
@@ -98,7 +106,7 @@
 
 @media(min-width: 500px) {
     .single-wrapper {
-        max-width: 480px;
+        max-width: 465px;
     }
 }
 
