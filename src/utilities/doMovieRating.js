@@ -1,4 +1,5 @@
 import React from 'react';
+import rStar from '../images/rating-star.png';
 
 const doMovieRating = (movie, type = "grid") => {
     let clsNm = type === "grid" ? "movie-rating" : "single-rating";
@@ -9,7 +10,7 @@ const doMovieRating = (movie, type = "grid") => {
     } else {
         return (
         <p className={clsNm}>
-            <span className="rating-star">{`\u2605`}</span> {movie.vote_average}
+            <span className="rating-star"><img src={rStar} alt="Rating star" /></span> {movie.vote_average}
         </p>
         );
     }

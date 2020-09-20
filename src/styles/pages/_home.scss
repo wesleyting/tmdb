@@ -103,6 +103,12 @@
 
     .movie-rating {
          padding: 4px 0;
+         
+         .rating-star img {
+             padding-top: 0.4em;
+             max-width: 1.2em;
+             max-height: 1.2em;
+         }
     }
 
     .movie-rls, .movie-rating {
