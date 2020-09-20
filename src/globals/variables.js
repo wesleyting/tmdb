@@ -20,4 +20,6 @@ export const SEARCH_QUERY = "&query=";
 export const BASE_POSTER = "https://image.tmdb.org/t/p/";
 export const NULL_POSTER = PLACEHOLDER_POSTER;
 
+export const APP_FOLDER_NAME = '/reeltalk';
+
 
