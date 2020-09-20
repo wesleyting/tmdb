@@ -65,7 +65,9 @@ const Pagination = ( {results, handleChange} ) => {
     }
     return (
         <div className="bottom-pagination">
+            <div className="pagination-content">
             <div className="pagi-wrap">{doPagi()}</div>
+            </div>
         </div>
     );
 
