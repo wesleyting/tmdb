@@ -16,7 +16,7 @@ function Nav() {
       <nav className='navbar'>
         <Link to='/' 
         className='navbar-logo'>
-          <img src={Logo} />
+          <img src={Logo} alt="Reel Talk Logo" />
         </Link>
         <div className="search-bar">
         <SearchBar /> 

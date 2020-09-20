@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BASE_URL, API_KEY, URL_FILTER, DEFAULT_FILTER, BASE_PAGE, DEFAULT_PAGE } from '../globals/variables.js'
 import MovieList from './MovieList';
 import SelectFilter from './SelectFilter';
-//import headerImage from '../images/demo2.jpg';
-import SearchBar from './SearchBar';
 import Pagination from './Pagination';
 import {  motion } from 'framer-motion';
 
@@ -47,7 +45,6 @@ const Home = () => {
                 </div>
             </div>
             <div className="content-wrapper">
-                {/* <SearchBar /> */}
                 <SelectFilter handleChange={handleFilter} filterChoices={URL_FILTER} defaultFilter={DEFAULT_FILTER} />
                 <div className="movie-grid"><MovieList grid={grid}/></div>
                 <Pagination results={pagi} handleChange={handlePagi}/>

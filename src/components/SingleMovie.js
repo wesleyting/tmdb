@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BASE_URL, API_KEY } from '../globals/variables.js';
 import FaveButton from './FaveButton';
-import SearchBar from './SearchBar';
 import doMovieImages from '../utilities/doMovieImages';
 import doMovieRating from '../utilities/doMovieRating';
 import parseDate from '../utilities/parseDate';
-import min2hr from '../utilities/min2hr';
 import {  motion } from 'framer-motion';
 
 const SingleMovie = ({match}) => {
