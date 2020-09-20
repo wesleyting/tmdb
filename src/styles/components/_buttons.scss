@@ -188,4 +188,59 @@
     }
 }
 
+.filter-wrapper {
+    display: inline-block;
+    
+    .view-filters {
+        display:none;
+        justify-content: center;
+        box-shadow: $boxShadow;
+
+        @media (min-width: 480px) {
+            display:flex;
+        }
+    }
+
+    .view-filters-dropdown {
+        @media (min-width: 480px) {
+            display: none;
+        }
+    }
+
+    button {
+        padding: 12px 14px;
+        background: $contentColour;
+        border: none;
+
+        
+        &:first-child button {
+            border-radius: 8px 0px 0px 8px;
+        }
+
+        &:last-child button {
+            border-radius: 0px 8px 8px 0px;
+        }
+
+        &:hover {
+            background: $hoverColour;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .selected {
+        background: $dark;
+        color: white;
+    }
+
+    
+    .pop-filter-btn {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .soon-filter-btn {
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+
 
