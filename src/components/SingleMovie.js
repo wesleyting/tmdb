@@ -31,7 +31,6 @@ const SingleMovie = ({match}) => {
             animate={{ opacity:1 }} 
             initial={{ opacity:0 }}>
                 <div className="single-wrapper">
-                    {/* <div className='single-search'><SearchBar/></div> */}
                     <div className="single-movie-info">
                         <div className="movie-poster">{doMovieImages(singleMovie, posterWidth,'poster')}
                         <div className='favorite'><FaveButton item={singleMovie}  /></div></div>
@@ -39,13 +38,11 @@ const SingleMovie = ({match}) => {
                             <div className='single-title'>
                                 <h1>{singleMovie.title}</h1> 
                             </div>
-                            {/*<h2>{singleMovie.tagline}</h2>*/}
                             <p className="single-desc">{singleMovie.overview}</p>
                             <div className='rls-and-rating'>
                                 <p className="single-rls">{parseDate(singleMovie.release_date)}</p>
                                 {doMovieRating(singleMovie, "single")}
                             </div>
-                            {/*<p className="single-runtime">{min2hr(singleMovie.runtime)} </p> */}
                         </div>
                     </div>
                 </div>
