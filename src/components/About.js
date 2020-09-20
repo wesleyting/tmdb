@@ -18,7 +18,8 @@ const About = () => (
                 <div className="about-info">
                     <h2>About the Project</h2>
                     <p>Reel Talk is a dynamic movie database website that lets users discover movies based on different categories, as well as allowing them to save their favourite ones. Reel Talk credits The Movie Database (TMDB) as the source for its data.</p>
-                    <div className="tmdb-img"><img src= {TMDBLogo} alt="TMDB Logo" /></div>
+                    <a href="https://www.themoviedb.org/"><div className="tmdb-img"><img src= {TMDBLogo} alt="TMDB Logo" /></div></a>
+                    <p className="tmdb-img-attr">This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
                 </div>
                 <div className="about-info">
                     <h2>About the Team</h2>
