@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../images/reeltalk-logo.png';
+import SearchBar from './SearchBar';
 
 
 function Nav() {
@@ -17,6 +18,9 @@ function Nav() {
         className='navbar-logo'>
           <img src={Logo} />
         </Link>
+        <div className="search-bar">
+        <SearchBar /> 
+        </div>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
@@ -39,10 +43,10 @@ function Nav() {
               Favorites
             </Link>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item nav-item-search'>
             <Link to='/search' className='nav-links' onClick=
             {closeMobileMenu}>
-              Search
+              Search <i class="fas fa-search search-icon"></i>
             </Link>
           </li>
         </ul>
