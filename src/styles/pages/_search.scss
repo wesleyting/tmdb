@@ -5,6 +5,14 @@
     padding: 4px;
     width: 60px;
     border-radius: $buttonRadius;
+
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(0, 89, 255);
+        color: white;
+    }
 }
 
 .searchbar {
@@ -63,7 +71,13 @@
 
 @media (min-width: 1100px) {
     .searchbar {
+        padding: 12px 14px;
         width: 300px;
+    }
+
+    .search-btn {
+        padding: 12px 14px;
+        width: auto;
     }
 
     .search-wrapper {

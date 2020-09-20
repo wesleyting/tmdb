@@ -20,19 +20,42 @@
   }
 
   .nav-search-bar {
-    position: absolute;
-    left:20%;
-    top: 5px;
+    // left:20%;
+    // top: 5px;
     width: 100%;
     z-index: 1000000000;
     display: none;
 
     .search-bar {
       width: 500px;
+      display:flex;
+      align-items: center;
+      justify-content: flex-end;
+
+   
+      .searchbar {
+        padding: 12px 14px;
+        @media (min-width: 1100px) {
+          min-width: 28vw;
+        }
+        @media (min-width: 1500px) {
+          min-width: 40vw;
+        }
+      }
+
+      .search-btn {
+        padding: 12px 14px;
+        width: auto;
+        margin: 0;
+      }
     }
 
     @media (min-width: 1180px) {
-      display: block;
+      display: flex;
+      flex-grow: 9;
+
+      
+      width: auto;
     }
   }
 
