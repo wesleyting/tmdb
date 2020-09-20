@@ -1,13 +1,12 @@
-
-
 .about-img {
-    background-image: linear-gradient(to bottom,  #4798b12d,  #26385552), url('../../images/about-banner-img.jpg');
+    background-image: linear-gradient(to bottom,  #4798b12d,  #26385552), url('../../images/about-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
     overflow: hidden;
     height: 60vh;
+    background-attachment: fixed;
 
     
     img {
@@ -68,7 +67,12 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: $boxShadow;
-    padding: 15px;
+    padding: 25px;
+    border-radius: 6px;
+
+    h2 {
+        padding: 10px 0 15px 0;
+    }
 
     a {
         text-decoration: none;
@@ -97,9 +101,10 @@
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
-        max-width: 880px;
+        max-width: 900px;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+        margin-top: 30px;
     }
 
     .about-h1 {

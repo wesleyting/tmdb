@@ -25,9 +25,9 @@ const MovieList = ({grid}) => {
                 </div>
                 </div>
                 <div className="movie-info">
-                    <p className="movie-title">
+                    <h1 className="movie-title">
                         <Link to={`movie/${item.id}`}>{item.title}</Link>
-                    </p>
+                    </h1>
                     <p className="movie-rls">{parseDate(item.release_date)}</p>
                     {doMovieRating(item)}
                     <p className="movie-desc">{item.overview}</p>  
