@@ -8,9 +8,11 @@ const SearchPage = () => (
 	animate={{ opacity:1 }} 
 	initial={{ opacity:0 }}>
 		<section className = "search-wrapper">
-			<h1>Search Page</h1>
-			<p>Looking for a particular movie?</p>
-			<p>Refine your results by typing in a movie name.</p>
+			<h1 className="search-title">Search Page</h1>
+			<div className="search-content">
+				<p>Looking for a particular movie?</p>
+				<p>Refine your results by typing in a movie name.</p>
+			</div>
 			<SearchBar/>
 		</section>
 	</motion.main>
