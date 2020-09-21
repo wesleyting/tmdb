@@ -26,7 +26,7 @@ const Favorites = () => {
                         <p>You currently have no favorites added!</p>
                         <p>Go back to the <Link to={'/'}>home page</Link> to browse through movies, or search for a specific movie.</p>
                         <div className='search-btn-data'>
-                            <SearchBar type="fave"/>
+                            <SearchBar type="fave" cmp={{cmp:"fav", qry:""}}/>
                         </div>    
                     </div>
                 </motion.div>
@@ -41,7 +41,7 @@ const Favorites = () => {
                             initial={{ opacity:0 }}>
                     <h1 className='fave-title'>Your Favourite Movies</h1>
                         <div className='search-btn-data'>
-                            <SearchBar type="fave"/>
+                            <SearchBar type="fave" cmp={{cmp:"fav", qry:""}}/>
                         </div>    
                         <button id="cl-faves" onClick={handleClear}>Clear All</button>
                         <div className="movie-grid"><MovieList grid={grid}/></div>

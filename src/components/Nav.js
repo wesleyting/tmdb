@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../images/reeltalk-logo.png';
 import SearchBar from './SearchBar';
 
 
-function Nav() {
+function Nav () {
+  let q = useLocation().pathname.replace("/search/","").trim();
+    
   const[click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
 
   return (
     <>
@@ -23,7 +24,7 @@ function Nav() {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <div className="nav-search-bar">
-        <SearchBar /> 
+        <SearchBar cmp={{cmp:"nav",qry:q}} />
         </div>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick=

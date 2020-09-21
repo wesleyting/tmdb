@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { BASE_URL, API_KEY } from '../globals/variables.js';
 import FaveButton from './FaveButton';
 import doMovieImages from '../utilities/doMovieImages';
 import doMovieRating from '../utilities/doMovieRating';
 import parseDate from '../utilities/parseDate';
-import {  motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-const SingleMovie = ({match}) => {
+const SingleMovie = () => {
     let posterWidth = "original";
 
     const [singleMovie, setMovie] = useState(null);
-    const id = match.params.id;
+    const id = useParams().id;
     
     useEffect(() => {
         const fetchMovie = async () => {

@@ -13,7 +13,7 @@ const SearchPage = () => (
 				<p>Looking for a particular movie?</p>
 				<p>Refine your results by typing in a movie name.</p>
 			</div>
-			<SearchBar/>
+			<SearchBar cmp={{cmp:"search",qry:""}}/>
 		</section>
 	</motion.main>
 );
