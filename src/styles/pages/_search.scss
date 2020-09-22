@@ -5,11 +5,11 @@
     padding: 4px;
     width: 60px;
     border-radius: $buttonRadius;
-
+    cursor: pointer;
     transition: background-color 0.2s ease-out;
 
     &:hover {
-        cursor: pointer;
+
         background: rgb(0, 89, 255);
         color: white;
     }
@@ -101,4 +101,13 @@
     .search-wrapper {
         max-width: 1400px;
     }
+}
+
+
+input.searchbar {
+    outline: none;
+}
+
+button.search-btn {
+    outline: none;
 }
