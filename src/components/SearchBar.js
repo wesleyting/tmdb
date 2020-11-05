@@ -19,8 +19,7 @@ const SearchBar = ({type, cmp}) => {
     },[q, isRes, cmp]);
 
     const handleQuery = (e) => {
-        setQuery(e.target.value);       
-        
+        setQuery(e.target.value);   
         if (dos) {   
             setDOS(false);
         }

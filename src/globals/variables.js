@@ -7,7 +7,7 @@ const API_KEY_ONLY = "a109986a8c819f27263237cea5bc599a";
 export const API_KEY = `?api_key=${API_KEY_ONLY}`;
 
 export const BASE_URL = "https://api.themoviedb.org/3/movie/";
-export const BASE_SEARCH = "https://api.themoviedb.org/3/search/movie/";
+export const BASE_SEARCH = "https://api.themoviedb.org/3/search/movie";
 export const BASE_LANG = '&language="en-US"';
 export const BASE_PAGE = "&page=";
 
@@ -20,6 +20,6 @@ export const SEARCH_QUERY = "&query=";
 export const BASE_POSTER = "https://image.tmdb.org/t/p/";
 export const NULL_POSTER = PLACEHOLDER_POSTER;
 
-export const APP_FOLDER_NAME = '/reeltalk';
+export const APP_FOLDER_NAME = '/projects/reeltalk';
 
 

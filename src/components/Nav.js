@@ -45,7 +45,7 @@ function Nav () {
             </Link>
           </li>
           <li className='nav-item nav-item-search'>
-            <Link to='/search' className='nav-links' onClick=
+            <Link to='/search/' className='nav-links' onClick=
             {closeMobileMenu}>
               Search <i className="fas fa-search search-icon"></i>
             </Link>
