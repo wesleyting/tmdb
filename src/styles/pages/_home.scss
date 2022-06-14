@@ -25,6 +25,10 @@
 .header-text { 
     margin-right: 25px;
     margin-top: 10px;
+    
+    @media (min-width: 1600px) {
+        margin-left: 200px;
+    }
 
     h1 {
         font-size: 30px;
